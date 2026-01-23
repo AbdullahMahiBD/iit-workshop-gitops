@@ -30,4 +30,4 @@ spec:
           prune: true
         syncOptions:
         - PrunePropagationPolicy=background
-        - CreateNamespace=true~
+        - CreateNamespace=true
