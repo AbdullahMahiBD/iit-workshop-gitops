@@ -18,7 +18,7 @@ spec:
     spec:
       project: cloudnative
       source:
-        repoURL: git@github.com:amdadulbari/cloudnative-gitops.git 
+        repoURL: git@github.com:AbdullahMahiBD/workshop-gitops.git 
         targetRevision: main 
         path: '{{appname}}'
       destination:
