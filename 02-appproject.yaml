@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Project for applications from cloudnative-gitops repository
   sourceRepos:
-    - 'git@github.com:amdadulbari/cloudnative-gitops.git'
+    - 'git@github.com:AbdullahMahiBD/workshop-gitops.git'
     - '*'  # Allow all repos if needed, or remove this line to restrict
   destinations:
     - namespace: '*'
