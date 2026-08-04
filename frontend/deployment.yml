@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: amdadulbari/devops-radar:fa0e623
+          image: abdullahmahiofficial/devops-project:latest
           ports:
             - containerPort: 80
 ---
