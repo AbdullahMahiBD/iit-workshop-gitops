@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: cloudnative-gitops-apps 
+  name: cloudnative-gitops-apps
   namespace: argocd
 spec:
   generators:
-  - list:
-      elements:
-      - appname: frontend 
-      - appname: backend 
+    - list:
+        elements:
+          - appname: frontend
+          - appname: backend
   template:
     metadata:
       name: '{{appname}}'
@@ -18,8 +18,8 @@ spec:
     spec:
       project: cloudnative
       source:
-        repoURL: git@github.com:AbdullahMahiBD/workshop-gitops.git 
-        targetRevision: main 
+        repoURL: git@github.com:AbdullahMahiBD/workshop-gitops.git
+        targetRevision: main
         path: '{{appname}}'
       destination:
         server: https://kubernetes.default.svc
@@ -29,5 +29,5 @@ spec:
           selfHeal: true
           prune: true
         syncOptions:
-        - PrunePropagationPolicy=background
-        - CreateNamespace=true
+          - PrunePropagationPolicy=background
+          - CreateNamespace=true
