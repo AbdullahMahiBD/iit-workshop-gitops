@@ -8,7 +8,6 @@ spec:
     - list:
         elements:
           - appname: frontend
-          - appname: backend
   template:
     metadata:
       name: '{{appname}}'
@@ -18,7 +17,7 @@ spec:
     spec:
       project: cloudnative
       source:
-        repoURL: git@github.com:AbdullahMahiBD/workshop-gitops.git
+        repoURL: https://github.com/AbdullahMahiBD/iit-workshop-gitops.git
         targetRevision: main
         path: '{{appname}}'
       destination:
