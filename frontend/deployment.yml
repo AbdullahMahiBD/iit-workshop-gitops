@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: abdullahmahiofficial/devops-project:11d2dce
+          image: abdullahmahiofficial/iit-project:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
