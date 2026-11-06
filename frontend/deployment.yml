@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: iit-app
-          image: abdullahmahiofficial/iit-project:6946c9e
+          image: abdullahmahiofficial/iit-project:87a88d0
           imagePullPolicy: Always
           ports:
             - containerPort: 80
